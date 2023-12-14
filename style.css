@@ -1,0 +1,67 @@
+:root {
+  /* Font Sizes */
+  --fs-400: clamp(0.8594rem, 0.8177rem + 0.2083vw, 1rem);
+  --fs-500: clamp(1.0313rem, 0.9664rem + 0.3241vw, 1.25rem);
+  --fs-600: clamp(1.2375rem, 1.1412rem + 0.4815vw, 1.5625rem);
+  --fs-700: clamp(1.485rem, 1.3463rem + 0.6935vw, 1.9531rem);
+  --fs-800: clamp(1.7819rem, 1.5865rem + 0.9769vw, 2.4413rem);
+  --fs-900: clamp(2.1381rem, 1.8674rem + 1.3537vw, 3.0519rem);
+  --fs-1000: clamp(2.5663rem, 2.1963rem + 1.85vw, 3.815rem);
+  --fs-1100: clamp(3.0794rem, 2.579rem + 2.5019vw, 4.7681rem);
+  --fs-1200: clamp(3.695rem, 3.0237rem + 3.3565vw, 5.9606rem);
+
+  /* Font Weights */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+  --fw-black: 900;
+
+  /* Font Families */
+  --ff-primary-100: 'Manrope', sans-serif;
+
+  /* Colour Palette */
+  --clr-primary-100: hsl(193, 38%, 86%);
+  --clr-primary-200: hsl(150, 100%, 66%);
+
+  --clr-neutral-100: hsl(217, 19%, 38%);
+  --clr-neutral-200: hsl(217, 19%, 24%);
+  --clr-neutral-300: hsl(218, 23%, 16%);
+
+  /* Spacing */
+  --spacing-xxs: 8px;
+  --spacing-xs: 16px;
+  --spacing-sm: 24px;
+  --spacing-md: 32px;
+  --spacing-lg: 40px;
+  --spacing-xl: 48px;
+  --spacing-2xl: 56px;
+  --spacing-3xl: 64px;
+  --spacing-4xl: 72px;
+  --spacing-5xl: 80px;
+  --spacing-6xl: 88px;
+  --spacing-7xl: 96px;
+}
+
+@media (min-width: 375px) {
+
+}
+
+@media (min-width: 1440px) {
+    
+}
+
+
+
+## Typography
+
+### Body Copy
+
+- Font size (quote): 28px
+
+### Font
+
+- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
+- Weights: 800
