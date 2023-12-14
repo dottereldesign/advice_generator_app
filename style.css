@@ -190,6 +190,17 @@ main {
   background-position: center;
 }
 
+@media (min-width: 768px) {
+  .seperator {
+    background-image: url("images/pattern-divider-desktop.svg");
+    width: 100%;
+    height: 16px;
+    background-repeat: no-repeat;
+    margin-top: 24px;
+    background-position: center;
+  }
+}
+
 button {
   background-image: url("images/icon-dice.svg"); /* Replace with your image path */
   background-size: 24px; /* Cover ensures the entire button is filled */
