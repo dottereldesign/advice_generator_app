@@ -20,7 +20,7 @@
   --fw-black: 900;
 
   /* Font Families */
-  --ff-primary-100: 'Manrope', sans-serif;
+  --ff-primary-100: "Manrope", sans-serif;
 
   /* Colour Palette */
   --clr-primary-100: hsl(193, 38%, 86%);
@@ -45,23 +45,165 @@
   --spacing-7xl: 96px;
 }
 
-@media (min-width: 375px) {
-
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-@media (min-width: 1440px) {
-    
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
 
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
 
-## Typography
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
 
-### Body Copy
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
 
-- Font size (quote): 28px
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
 
-### Font
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
 
-- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
-- Weights: 800
+/* Make images easier to work with */
+img,
+picture {
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+* {
+  font-family: var(--ff-primary-100);
+}
+
+h4 {
+  text-transform: uppercase;
+  color: var(--clr-primary-200);
+  letter-spacing: 2px;
+  font-size: var(--fs-400);
+  font-weight: var(--fw-medium);
+  padding-top: 16px;
+}
+
+body {
+  background-color: var(--clr-neutral-300);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 16px;
+}
+
+main {
+  width: min(100%, 375px);
+  margin: 0 auto;
+  background-color: var(--clr-neutral-200);
+  border-radius: 6px;
+  position: relative;
+  padding: 32px 32px 64px 32px;
+}
+
+.advice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.advice p {
+  margin-top: 24px;
+  color: var(--clr-primary-100);
+  font-weight: var(--fw-semi-bold);
+  font-size: var(--fs-600);
+  text-align: center;
+  line-height: 1.4;
+}
+
+.seperator {
+  background-image: url("images/pattern-divider-mobile.svg");
+  width: 100%;
+  height: 16px;
+  background-repeat: no-repeat;
+  margin-top: 24px;
+  background-position: center;
+}
+
+button {
+  background-image: url("images/icon-dice.svg"); /* Replace with your image path */
+  background-size: 24px; /* Cover ensures the entire button is filled */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--clr-primary-200);
+  width: 64px; /* Adjust width as needed */
+  height: 64px; /* Adjust height as needed */
+  border: none; /* Remove default border */
+  color: white; /* Change text color as needed */
+  text-align: center;
+  padding: 10px; /* Adjust padding as needed */
+  cursor: pointer;
+  position: absolute;
+  bottom: -32px;
+  border-radius: 100%;
+}
