@@ -138,7 +138,7 @@ textarea:not([rows]) {
   font-family: var(--ff-primary-100);
 }
 
-h4 {
+h1 {
   text-transform: uppercase;
   color: var(--clr-primary-200);
   letter-spacing: 2px;
@@ -181,7 +181,7 @@ main {
   line-height: 1.4;
 }
 
-.seperator {
+.separator {
   background-image: url("images/pattern-divider-mobile.svg");
   width: 100%;
   height: 16px;
@@ -191,7 +191,7 @@ main {
 }
 
 @media (min-width: 768px) {
-  .seperator {
+  .separator {
     background-image: url("images/pattern-divider-desktop.svg");
     width: 100%;
     height: 16px;

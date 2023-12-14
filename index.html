@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get fresh, insightful advice at the click of a button with our Advice Generator."
+    />
 
     <title>Advice Generator</title>
 
@@ -17,13 +21,15 @@
   <body>
     <main>
       <article class="advice">
-        <h4 id="advice-id">Advice #117</h4>
+        <h1 id="advice-id">Advice #117</h1>
+
         <p id="advice-text">
           "It is easy to sit up and take notice, what's difficult is getting up
           and taking action."
         </p>
-        <div class="seperator"></div>
-        <button id="dice-button"></button>
+        <div class="separator"></div>
+
+        <button id="dice-button" aria-label="Generate new advice"></button>
       </article>
     </main>
     <script src="script.js"></script>
