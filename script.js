@@ -9,6 +9,5 @@ document.getElementById("dice-button").addEventListener("click", function () {
     })
     .catch((error) => {
       console.error("Error fetching advice:", error);
-      // Handle the error (e.g., show an error message)
     });
 });
