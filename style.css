@@ -157,7 +157,7 @@ body {
 }
 
 main {
-  width: min(100%, 375px);
+  width: min(100%, 450px);
   margin: 0 auto;
   background-color: var(--clr-neutral-200);
   border-radius: 6px;
@@ -206,4 +206,8 @@ button {
   position: absolute;
   bottom: -32px;
   border-radius: 100%;
+}
+
+button:hover {
+  box-shadow: 0 0 25px 0px hsl(150, 100%, 66%, 0.7); /* Adjust the color and size as needed */
 }
