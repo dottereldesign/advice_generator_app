@@ -1,5 +1,5 @@
 document.getElementById("dice-button").addEventListener("click", function () {
-  fetch("https://api.adviceslip.com/advice")
+  fetch("https://api.adviceslip.com/advice", { cache: "no-cache" }) // Added cache option
     .then((response) => response.json())
     .then((data) => {
       const advice = data.slip.advice;
